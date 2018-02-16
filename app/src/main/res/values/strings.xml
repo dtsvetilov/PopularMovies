@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Popular Movies</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+
+    <string name="error_message">
+        An error has occurred. Please try again by clicking REFRESH
+    </string>
+
+    <string name="pref_sort_order_label">Sort Order</string>
+    <string name="pref_sort_order_label_popular">Popular</string>
+    <string name="pref_sort_order_label_to_rated">Top Rated</string>
+    <string name="pref_sort_order_key" translatable="false">sort_order</string>
+    <string name="pref_sort_order_popular" translatable="false">popular</string>
+    <string name="pref_sort_order_to_rated" translatable="false">top_rated</string>
+    <string name="movie_poster_content_description">Movie Poster</string>
+    <string name="movie_backdrop_content_description">Movie Backdrop</string>
+
+    <string name="detail_label_poster">Poster</string>
+    <string name="detail_label_backdrop">Backdrop</string>
+    <string name="detail_label_adult">Adult</string>
+    <string name="detail_label_budget">Budget</string>
+    <string name="detail_label_genres">Genres</string>
+    <string name="detail_label_homepage">Homepage</string>
+    <string name="detail_label_original_language">Original Language</string>
+    <string name="detail_label_original_title">Original Title</string>
+    <string name="detail_label_overview">Overview</string>
+    <string name="detail_label_popularity">Popularity</string>
+    <string name="detail_label_production_companies">Production Companies</string>
+    <string name="detail_label_production_countries">Production Countries</string>
+    <string name="detail_label_release_date">Release Date</string>
+    <string name="detail_label_revenue">Revenue</string>
+    <string name="detail_label_runtime">Runtime</string>
+    <string name="detail_label_spoken_languages">Spoken Languages</string>
+    <string name="detail_label_status">Status</string>
+    <string name="detail_label_tagline">Tagline</string>
+    <string name="detail_label_vote_average">Vote Average</string>
+    <string name="detail_label_vote_count">Vote Count</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="data_unavailable">Data Unavailable</string>
+
+</resources>

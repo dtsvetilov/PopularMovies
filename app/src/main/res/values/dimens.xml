@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="grid_item_height">160dp</dimen>
+    <dimen name="movie_title_padding_horizontal">8dp</dimen>
+    <dimen name="movie_title_padding_vertical">4dp</dimen>
+    <dimen name="movie_title_height">48dp</dimen>
+    <dimen name="movie_title_text_size">14sp</dimen>
+
+    <dimen name="activity_content_horizontal_padding">16dp</dimen>
+    <dimen name="activity_content_vertical_padding">8dp</dimen>
+
+    <dimen name="movie_image_height">160dp</dimen>
+
+</resources>

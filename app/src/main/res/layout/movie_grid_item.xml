@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/grid_item_height">
+
+    <ImageView
+        android:id="@+id/poster_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/movie_poster_content_description"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/movie_title_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/movie_title_container_background_color"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:paddingBottom="@dimen/movie_title_padding_vertical"
+        android:paddingLeft="@dimen/movie_title_padding_horizontal"
+        android:paddingRight="@dimen/movie_title_padding_horizontal"
+        android:paddingTop="@dimen/movie_title_padding_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/movie_title_text_size" />
+
+</RelativeLayout>

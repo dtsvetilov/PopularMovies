@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <style name="ContentRowStyle">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/activity_content_vertical_padding</item>
+        <item name="android:paddingLeft">@dimen/activity_content_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/activity_content_horizontal_padding</item>
+        <item name="android:paddingTop">@dimen/activity_content_vertical_padding</item>
+    </style>
+
+</resources>
