@@ -40,6 +40,6 @@
     <string name="detail_label_vote_count">Vote Count</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
-    <string name="data_unavailable">Data Unavailable</string>
+    <string name="data_unavailable">--Data Unavailable--</string>
 
 </resources>

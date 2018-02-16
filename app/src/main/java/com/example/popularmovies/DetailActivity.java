@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +30,7 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
 
     private static final String LOADER_MOVIE_ID = "loader_movie_id";
 
+    private LinearLayout mContentContainerLl;
 
     private TextView mErrorMessageDisplay;
     private ProgressBar mLoadingIndicator;
@@ -43,6 +45,7 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
         Intent intent = getIntent();
         if (intent == null) {
             closeOnError();
+            return;
         }
 
         int movieId = intent.getIntExtra(EXTRA_MOVIE_ID, DEFAULT_MOVIE_ID);
@@ -51,10 +54,10 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
             return;
         }
 
+        mContentContainerLl = findViewById(R.id.content_container_ll);
         mErrorMessageDisplay = findViewById(R.id.tv_error_message_display);
 
         mLoadingIndicator = findViewById(R.id.pb_loading_indicator);
-        mLoadingIndicator.setVisibility(View.VISIBLE);
 
         Bundle loaderBundle = new Bundle();
         loaderBundle.putInt(LOADER_MOVIE_ID, movieId);
@@ -123,11 +126,15 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
     }
 
     private void showErrorMessage() {
+        mContentContainerLl.setVisibility(View.GONE);
         mLoadingIndicator.setVisibility(View.GONE);
         mErrorMessageDisplay.setVisibility(View.VISIBLE);
     }
 
     private void populateUI(MovieDetails movieDetails) {
+        mContentContainerLl.setVisibility(View.VISIBLE);
+        mErrorMessageDisplay.setVisibility(View.GONE);
+
         TextView adultTv = findViewById(R.id.adult_tv);
         TextView budgetTv = findViewById(R.id.budget_tv);
         TextView genresTv = findViewById(R.id.genres_tv);
